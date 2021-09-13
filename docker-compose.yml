@@ -22,7 +22,7 @@ services:
   environment: 
    MYSQL_USER: admin
    MYSQL_PASSWORD: admin123
-   MYSQL_ROOT_PASSWORD: mahabub6333
+   MYSQL_ROOT_PASSWORD: mahabub123
 volumes: 
  mysqldb:
   # external: true
