@@ -1,0 +1,8 @@
+.ini
+.dll
+.DS_Store
+.exe
+.cache
+.tmp
+.build
+.log

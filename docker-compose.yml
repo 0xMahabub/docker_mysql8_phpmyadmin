@@ -1,0 +1,28 @@
+version: '3.8'
+
+services: 
+ phpmyadmin:
+  image: phpmyadmin/phpmyadmin
+  restart: always
+  ports: 
+    - '8086:80'
+  environment: 
+    - PMA_HOST=mysql
+    # - PMA_ARBITRARY=1
+  depends_on: 
+    - mysql
+
+ mysql:
+  image: mysql:latest
+  ports: 
+    - '5506:3306'
+  restart: always
+  volumes: 
+    - mysqldb:/var/lib/mysql
+  environment: 
+   MYSQL_USER: admin
+   MYSQL_PASSWORD: admin123
+   MYSQL_ROOT_PASSWORD: mahabub6333
+volumes: 
+ mysqldb:
+  # external: true
